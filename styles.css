@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* applies to all of the page */
+.container { 
+	background-color:#00527a; 
+	color:white; 
+	margin:auto; 
+	text-align: center; 
+	width:90%; 
+}
+	
+header { 
+	height:100px; 
+	margin:1%; 
+	text-align:left; 
+}
+
+h1 { color:orange; }
+h2 { color: black; }
+
+#map { 
+	background-color:#00527a;
+	color:black;
+	float:left; 
+	height:450px; 
+	margin:auto; 
+	padding-bottom:10px; 
+	position:relative; 
+	text-align:left; 
+	width:100%; 
+}
+
+/* borough select */	
+.selection ul {
+	margin: 0;
+	padding: 0;
+}
+.selection ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 3px 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.selection ul li:hover { background: orange; }
+.selection ul li.active { background: orange; }
+
+/* borough filter panel */
+.selection .borough { display: none; }
+.selection .borough.active { display: block; }
+
+/* filter styles */
+.selection .filter ul li { border-radius: 0; }
+.selection .filter ul li:hover { background: pink; }	
+
+/* data table */
+.data {
+	color: black;
+	clear:both; 
+	margin:auto; 
+	position:relative; 
+	width:80%; 
+	padding-bottom: 20px;
+}
+
+/* these are all the styles that go with the table */
+#results{
+border-collapse: collapse;
+}
+thead{
+background-color: #FFAD33;
+font-size:1.4em;
+padding: 0px;
+border: 2px;
+border-style: dashed;
+}
+
+thead th{
+padding-left: 2px;
+padding-right: 2px;
+
+}
+.entry { border: 0px; padding-left: 10px; }
+
+tr.location { 
+background-color:#FFC670; 
+cursor:pointer; 
+}
+tr.location:hover {
+background-color:#FFF;
+}
+
+tr.locationDetail{
+background-color:#FFC670;
+
+}
+tr.detail {
+background-color:#FFF;
+}
+
+div.detail{  }
+div.detail p{ margin:5px; }
+
+td.count { text-align: center;}
+
+tr.location  a { color:#000;}
+tr.location  a:hover {color: #FFF;}
+tr.location a:visited { color: #000;}
+
+/*
+td.add
+td.owner
+td.bin
+span.count
+span.filing
+
+*/
+
